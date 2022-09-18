@@ -26,6 +26,8 @@ public class Order {
 
     private String status;
 
+    private String address;
+
     @PostPersist
     public void onPostPersist() {
         OrderPlaced orderPlaced = new OrderPlaced(this);
