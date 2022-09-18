@@ -73,6 +73,7 @@
                 'customerId': '',
                 'amount': 0,
                 'status': '',
+                'address': '',
             }
         },
         methods:{
