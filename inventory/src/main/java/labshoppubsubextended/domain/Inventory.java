@@ -12,7 +12,7 @@ import lombok.Data;
 public class Inventory {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private Long stock;
@@ -28,22 +28,20 @@ public class Inventory {
     }
 
     public static void decreaseStock(OrderPlaced orderPlaced) {
-        /** Example 1:  new item 
-        Inventory inventory = new Inventory();
-        repository().save(inventory);
 
-        */
-
-        /** Example 2:  finding and process
+        /** fill out following code  */
         
-        repository().findById(orderPlaced.get???()).ifPresent(inventory->{
+        repository().findById(Long.valueOf(orderPlaced.getProductId())).ifPresent(inventory->{
             
-            inventory // do something
+            inventory.setStock(inventory.getStock() - orderPlaced.getQty()); 
             repository().save(inventory);
 
 
          });
-        */
+      
 
+        
     }
+
+
 }
