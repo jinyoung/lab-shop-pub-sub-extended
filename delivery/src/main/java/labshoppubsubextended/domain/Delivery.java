@@ -22,6 +22,8 @@ public class Delivery {
 
     private Integer quantity;
 
+    private Long orderId;
+
     @PostPersist
     public void onPostPersist() {
         DeliveryStarted deliveryStarted = new DeliveryStarted(this);

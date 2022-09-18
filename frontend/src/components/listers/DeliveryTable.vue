@@ -70,6 +70,7 @@
                     { text: "address", value: "address" },
                     { text: "customerId", value: "customerId" },
                     { text: "quantity", value: "quantity" },
+                    { text: "orderId", value: "orderId" },
                 ],
             delivery : [],
             newValue: {},
@@ -90,6 +91,7 @@
                 'address': '',
                 'customerId': '',
                 'quantity': 0,
+                'orderId': 0,
             }
         },
         methods: {

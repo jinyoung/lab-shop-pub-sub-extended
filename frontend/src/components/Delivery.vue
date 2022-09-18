@@ -20,6 +20,7 @@
             <String label="Address" v-model="value.address" :editMode="editMode"/>
             <String label="CustomerId" v-model="value.customerId" :editMode="editMode"/>
             <Number label="Quantity" v-model="value.quantity" :editMode="editMode"/>
+            <Number label="OrderId" v-model="value.orderId" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>
