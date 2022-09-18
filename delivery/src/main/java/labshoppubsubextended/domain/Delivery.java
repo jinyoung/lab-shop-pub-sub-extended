@@ -44,6 +44,7 @@ public class Delivery {
         delivery.setOrderId(orderPlaced.getId());
         delivery.setCustomerId(orderPlaced.getCustomerId());
         delivery.setQuantity(orderPlaced.getQty());
+        delivery.setAddress(orderPlaced.getAddress());
         
         repository().save(delivery);
 
